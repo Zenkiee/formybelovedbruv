@@ -49,6 +49,10 @@ h1 {
 }
 
 .letter {
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
+  letter-spacing: 1px;
+  font-size: 1rem;
   display: flex;       
   flex-direction: row; 
   gap: 20px;
@@ -144,4 +148,13 @@ h1 {
   .text-side {
     text-align: center;
   }
+}
+
+#poem::after {
+  content: "|";
+  animation: blink 1s infinite;
+}
+
+@keyframes blink {
+  50% { opacity: 0; }
 }

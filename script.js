@@ -30,3 +30,50 @@ function createHeart() {
 }
 
 setInterval(createHeart, 500);
+
+const poemText = `In the quiet where shadows used to stay,
+You came like dawn and chased them away.
+A gentle light in my darkest night,
+Turning my fears into something bright.
+
+I wandered lost, with no place to start,
+Then you found your way into my heart.
+Now every breath, every moment feels true—
+How lucky I am to have found you.
+
+- your bruv, Miguel ❤️`;
+
+let index = 0;
+
+function typeWriter() {
+  const poemElement = document.getElementById("poem");
+
+  if (index < poemText.length) {
+    poemElement.innerHTML += poemText.charAt(index) === "\n" ? "<br>" : poemText.charAt(index);
+    index++;
+    setTimeout(typeWriter, 80);
+  }
+}
+
+function openEnvelope() {
+  const envelope = document.getElementById('envelope');
+  envelope.classList.toggle('open');
+
+  const music = document.getElementById('bg-music');
+  music.volume = 0;
+  music.play();
+
+  let volume = 0;
+  const fade = setInterval(() => {
+    if (volume < 1) {
+      volume += 0.05;
+      music.volume = volume;
+    } else {
+      clearInterval(fade);
+    }
+  }, 200);
+
+  document.getElementById("poem").innerHTML = "";
+  index = 0;
+  setTimeout(typeWriter, 500);
+}
