@@ -135,6 +135,12 @@ h3 {
   }
 }
 
+.click-text {
+  font-size: 0.7rem;
+  opacity: 0.7;
+  margin-top: 5px;
+}
+
 .trigger {
   cursor: pointer;
   margin: 20px 0;
