@@ -3,6 +3,7 @@ function openEnvelope() {
   envelope.classList.toggle('open');
 
   const music = document.getElementById('bg-music');
+  music.volume = 1.0;
   music.play();
 }
 
