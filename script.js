@@ -3,11 +3,20 @@ function openEnvelope() {
   envelope.classList.toggle('open');
 
   const music = document.getElementById('bg-music');
-  music.volume = 1.0;
+  music.volume = 0;
   music.play();
+
+  let volume = 0;
+  const fade = setInterval(() => {
+    if (volume < 1) {
+      volume += 0.05;
+      music.volume = volume;
+    } else {
+      clearInterval(fade);
+    }
+  }, 200);
 }
 
-// Floating hearts
 function createHeart() {
   const heart = document.createElement('div');
   heart.classList.add('heart');
