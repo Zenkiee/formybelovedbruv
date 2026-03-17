@@ -90,7 +90,11 @@ h3 {
 
 .letter {
   font-family: 'Dancing Script', cursive;
+<<<<<<< Updated upstream
   font-weight: 550;
+=======
+  font-weight: 700;
+>>>>>>> Stashed changes
   letter-spacing: 1px;
   font-size: 1rem;
   display: flex;       
