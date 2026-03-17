@@ -14,7 +14,8 @@ body {
 }
 
 h1 {
-  font-size: 3.5rem;
+  font-size: 2.5rem;
+  font-weight: 800;
 }
 
 .photo {
@@ -50,7 +51,7 @@ h1 {
 
 .flap {
   width: 100%;
-  height: 0;
+  height: 0px;
   border-left: 150px solid transparent;
   border-right: 150px solid transparent;
   border-bottom: 100px solid #f472b6;
