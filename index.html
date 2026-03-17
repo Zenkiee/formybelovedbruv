@@ -3,33 +3,40 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>For My Bruv ❤️</title>
-
+  <title>For You ❤️</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
   <div class="container">
-    <h1>❤️</h1>
+    <h1>For My Love ❤️</h1>
 
-    <div class="photo">
-      <img src="./download" alt="Her Photo">
+    <!-- Small Heart + Text -->
+    <div class="trigger" onclick="openEnvelope()">
+      <span class="small-heart">❤️</span>
+      <p class="click-text">click this</p>
     </div>
 
-    <div class="heart-btn" onclick="openEnvelope()">❤️</div>
-
+    <!-- Envelope -->
     <div class="envelope" id="envelope">
       <div class="flap"></div>
       <div class="letter">
-        In the quiet where shadows used to stay,<br>
-        You came like dawn and chased them away.<br>
-        A gentle light in my darkest night,<br>
-        Turning my fears into something bright.<br><br>
+        <!-- Image inside envelope -->
+        <div class="inside-photo">
+          <img src="her-photo.jpg" alt="Her Photo">
+        </div>
 
-        I wandered lost, with no place to start,<br>
-        Then you found your way into my heart.<br>
-        Now every breath, every moment feels true—<br>
-        How lucky I am to have found you.
+        <p>
+          In the quiet where shadows used to stay,<br>
+          You came like dawn and chased them away.<br>
+          A gentle light in my darkest night,<br>
+          Turning my fears into something bright.<br><br>
+
+          I wandered lost, with no place to start,<br>
+          Then you found your way into my heart.<br>
+          Now every breath, every moment feels true—<br>
+          How lucky I am to have found you.
+        </p>
       </div>
     </div>
   </div>
