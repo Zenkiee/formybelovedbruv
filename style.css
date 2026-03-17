@@ -30,7 +30,6 @@ h1 {
   width: 100%;
 }
 
-/* Heart Button */
 .heart-btn {
   font-size: 40px;
   cursor: pointer;
@@ -42,17 +41,16 @@ h1 {
   transform: scale(1.2);
 }
 
-/* Envelope */
 .envelope {
-  width: 600px;          /* give space for flex */
-  max-width: 90%;        /* still responsive */
+  width: 600px;          
+  max-width: 90%;        
   margin: 20px auto;
   position: relative;
 }
 
 .letter {
   display: flex;       
-  flex-direction: row;       /* THIS is the key */
+  flex-direction: row; 
   gap: 20px;
   align-items: center;
   text-align: justify;
@@ -74,7 +72,6 @@ h1 {
   transform: translateY(0);
 }
 
-/* Floating hearts */
 .heart {
   position: fixed;
   bottom: -10px;
@@ -90,7 +87,6 @@ h1 {
   }
 }
 
-/* Trigger (heart + text) */
 .trigger {
   cursor: pointer;
   margin: 20px 0;
@@ -107,7 +103,6 @@ h1 {
   margin-top: 5px;
 }
 
-/* Image inside envelope */
 .inside-photo {
   margin-bottom: 15px;
   border-radius: 12px;
@@ -115,26 +110,23 @@ h1 {
 }
 
 .inside-photo img {
-  width: 40%;      /* smaller size */
-  max-width: 120px; /* limit size */
-  margin: 0 auto;   /* center it */
+  width: 40%;      
+  max-width: 120px; 
+  margin: 0 auto;
   display: block;
   border-radius: 12px;
 }
 
-/* Flex layout inside envelope */
 .flex-layout {
   display: flex;
   gap: 20px;
   align-items: center;
 }
 
-/* Text side */
 .text-side {
   flex: 2;
 }
 
-/* Image side */
 .inside-photo {
   flex: 1;
   display: flex;
