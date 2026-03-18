@@ -44,7 +44,6 @@ body::before {
 
 h1 {
   color:rgb(202, 236, 255);
-  -webkit-text-stroke: #020617 1px;
   font-size: 2.5rem;
   font-weight: 800;
 }
