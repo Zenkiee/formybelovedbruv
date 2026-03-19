@@ -1,31 +1,10 @@
-function openEnvelope() {
-  const envelope = document.getElementById('envelope');
-  envelope.classList.toggle('open');
-
-  const music = document.getElementById('bg-music');
-  music.volume = 0;
-  music.play();
-
-  let volume = 0;
-  const fade = setInterval(() => {
-    if (volume < 1) {
-      volume += 0.05;
-      music.volume = volume;
-    } else {
-      clearInterval(fade);
-    }
-  }, 200);
-}
-
 function createHeart() {
   const heart = document.createElement('div');
   heart.classList.add('heart');
   heart.innerHTML = '❤';
   heart.style.left = Math.random() * 100 + 'vw';
   heart.style.animationDuration = (3 + Math.random() * 3) + 's';
-
   document.body.appendChild(heart);
-
   setTimeout(() => heart.remove(), 6000);
 }
 
@@ -46,10 +25,9 @@ How lucky I am to have found you.
 let index = 0;
 
 function typeWriter() {
-  const poemElement = document.getElementById("poem");
-
+  const poemElement = document.getElementById('poem');
   if (index < poemText.length) {
-    poemElement.innerHTML += poemText.charAt(index) === "\n" ? "<br>" : poemText.charAt(index);
+    poemElement.innerHTML += poemText.charAt(index) === '\\n' ? '<br>' : poemText.charAt(index);
     index++;
     setTimeout(typeWriter, 80);
   }
@@ -58,11 +36,9 @@ function typeWriter() {
 function openEnvelope() {
   const envelope = document.getElementById('envelope');
   envelope.classList.toggle('open');
-
   const music = document.getElementById('bg-music');
   music.volume = 0;
   music.play();
-
   let volume = 0;
   const fade = setInterval(() => {
     if (volume < 1) {
@@ -72,8 +48,11 @@ function openEnvelope() {
       clearInterval(fade);
     }
   }, 200);
-
-  document.getElementById("poem").innerHTML = "";
+  document.getElementById('poem').innerHTML = '';
   index = 0;
   setTimeout(typeWriter, 500);
+}
+
+function goBack() {
+  window.location.href = 'Frontpage.html';
 }
