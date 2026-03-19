@@ -50,7 +50,6 @@ body {
 
 .gallery-hero {
   height: 100vh;
-  background: url('hero.jpg') center/cover no-repeat;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -60,7 +59,6 @@ body {
 }
 
 .gallery-hero-title {
-  padding: 20px;
   font-family: 'Playfair Display', serif;
   font-size: 60px;
   letter-spacing: 2px;
