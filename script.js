@@ -10,24 +10,22 @@ function createHeart() {
 
 setInterval(createHeart, 500);
 
-const poemText = `In the quiet where shadows used to stay,
-You came like dawn and chased them away.
-A gentle light in my darkest night,
-Turning my fears into something bright.
-
-I wandered lost, with no place to start,
-Then you found your way into my heart.
-Now every breath, every moment feels true—
-How lucky I am to have found you.
-
-- your bruv, Miguel ❤️`;
+const poemText = `In the quiet where shadows used to stay,\n
+You came like dawn and chased them away.\n
+A gentle light in my darkest night,\n
+Turning my fears into something bright.\n\n
+I wandered lost, with no place to start,\n
+Then you found your way into my heart.\n
+Now every breath, every moment feels true—\n
+How lucky I am to have found you.\n\n
+— your bruv, Miguel ❤️`;
 
 let index = 0;
 
 function typeWriter() {
   const poemElement = document.getElementById('poem');
   if (index < poemText.length) {
-    poemElement.innerHTML += poemText.charAt(index) === '\\n' ? '<br>' : poemText.charAt(index);
+    poemElement.innerHTML += poemText.charAt(index) === '\n' ? '<br>' : poemText.charAt(index);
     index++;
     setTimeout(typeWriter, 80);
   }
