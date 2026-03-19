@@ -4,23 +4,23 @@
   box-sizing: border-box;
 }
 
-.home-container {
-  font-family: 'Inter', sans-serif;
-  color: white;
-  min-height: 100vh;
-  overflow-x: hidden;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  background: radial-gradient(circle at 20% 20%, #1e1b4b, #020617 70%);
-  overflow: hidden;
+:root {
+  --bg-main: #020617;        
+  --bg-secondary: #1e1b4b;   
+
+  --card-bg: rgba(255, 255, 255, 0.05);
+  --glass: rgba(255, 255, 255, 0.06);
+
+  --text-main: #ffffff;
+  --text-soft: rgba(255,255,255,0.7);
+
+  --accent-pink: #f472b6;
+  --accent-purple: #a78bfa;
 }
 
 .home-container {
-  position: relative;
   font-family: 'Inter', sans-serif;
+  line-height: 2;
   color: white;
   min-height: 100vh;
   overflow-x: hidden;
@@ -29,7 +29,8 @@
   justify-content: center;
   align-items: center;
   text-align: center;
-  background: radial-gradient(circle at 20% 20%, #1e1b4b, #020617 70%);
+  background: radial-gradient(circle at 20% 20%, var(--bg-secondary), var(--bg-main));
+  overflow: hidden;
 }
 
 .home-profile {
@@ -43,7 +44,7 @@
 }
 
 .home-title {
-  color: rgb(221, 255, 253);
+  color: rgb(255, 255, 255);
   font-size: 4rem;
   margin: 5px 0;
   font-weight: 1000;
@@ -66,9 +67,9 @@
   text-decoration: none;
   padding: 14px 20px;
   border-radius: 14px;
-  background: rgba(255, 255, 255, 0.06);
+  background: rgb(255, 255, 255);
   backdrop-filter: blur(12px);
-  color: white;
+  color: rgb(0, 0, 0);
   font-weight: 500;
   letter-spacing: 0.3px;
   transition: all 0.25s ease;
@@ -78,9 +79,10 @@
 }
 
 .home-btn:hover {
+  color: white;
   transform: translateY(-2px);
-  background: rgba(244, 114, 182, 0.18);
+  background: rgb(0, 136, 255);
   box-shadow:
-    0 0 25px rgba(244, 114, 182, 0.35),
-    0 0 50px rgba(167, 139, 250, 0.15);
+    0 0 25px rgba(255, 255, 255, 0.792),
+    0 0 50px rgba(64, 0, 255, 0.15);
 }
