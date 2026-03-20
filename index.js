@@ -1,6 +1,6 @@
 function checkPassword() {
   const input = document.getElementById("passwordInput").value;
-  const correctPassword = "bruv"; // 🔥 change this
+  const correctPassword = "bruv";
 
   const login = document.getElementById("loginScreen");
   const main = document.getElementById("mainContent");
