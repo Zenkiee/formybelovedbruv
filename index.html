@@ -6,10 +6,25 @@
     <title>GEIA's Special Website</title>
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&amp;family=Inter:wght@300;400;600&amp;display=swap" rel="stylesheet">
     <link rel="stylesheet" href="index.css">
+    <script src="index.js" defer></script>
   </head>
   <body>
-    <div class="home-container">
-      <img src="./assets/img/28286ea2-fd14-4142-8b27-110983ef8c75.jpg" class="home-profile" alt="Profile">
+    <div class="login-screen" id="loginScreen">
+  <div class="login-box">
+    <div class="login-header">
+    <img src="./assets/img/28286ea2-fd14-4142-8b27-110983ef8c75.jpg" class="login-profile">
+    <div class="login-profile-text">
+    <h2 class="login-name">Gemmaima</h2>
+    <p class="login-text">the cutest, sweetest girl in the world 🌟</p>
+    </div>
+    </div>
+    <div class="input-container">
+    <input type="password" id="passwordInput" placeholder="Enter password..." class="login-input">
+    <button onclick="checkPassword()" class="login-btn">Unlock</button>
+    </div>
+  </div>
+</div>
+    <div class="home-container" id="mainContent">
       <h1 class="home-title">Welcome, my bruv!</h1>
       <p class="home-subtitle">what do you want to explore?</p>
       <div class="home-buttons">
