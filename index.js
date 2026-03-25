@@ -4,30 +4,20 @@ function checkPassword() {
   const login = document.getElementById("loginScreen");
   const main = document.getElementById("mainContent");
 
-  if (input === "bruv") {
-    alert("i love you so much, bruv 🥰");
-    unlock();
+  const responses = {
+  bruv: "i love you so much, bruv 🥰",
+  baguio: "you remembered 🥺",
+  "030826": "our special date 💖",
+  miguel: "wow, you really are my bruv 🥹",
+  geia: "Hi, cutie 😘"
+};
 
-  } else if (input === "baguio") {
-    alert("you remembered 🥺");
-    unlock();
-
-  } else if (input === "030826") {
-    alert("our special date 💖");
-    unlock();
-
-  } else if (input === "miguel") {
-    alert("wow, you really are my bruv 🥹");
-    unlock();
-  
-  } else if (input === "geia") {
-    alert("Hi, cutie 🥹");
-    unlock();
-
-  } else {
-    alert("wrong password 😤");
-    document.getElementById("passwordInput").value = "";
-  }
+if (responses[input]) {
+  alert(responses[input]);
+  unlock();
+} else {
+  alert("wrong password 😤");
+}
 
   function unlock() {
     sessionStorage.setItem("unlocked", "true");
