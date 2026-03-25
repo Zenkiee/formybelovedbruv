@@ -155,7 +155,7 @@
 
 .login-text {
   color: #ffffff;
-  font-size: 13px;
+  font-size: 10px;
   opacity: 0.6;
   max-width: 220px;
 }
@@ -232,14 +232,12 @@
   color: white;
 }
 
-/* 🔥 HIDE MAIN INITIALLY */
 #mainContent {
   opacity: 0;
   pointer-events: none;
   transition: opacity 0.8s ease;
 }
 
-/* SHOW MAIN */
 #mainContent.show {
   opacity: 1;
   pointer-events: auto;
