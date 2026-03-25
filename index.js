@@ -19,6 +19,10 @@ function checkPassword() {
   } else if (input === "miguel") {
     alert("wow, you really are my bruv 🥹");
     unlock();
+  
+  } else if (input === "geia") {
+    alert("Hi, cutie 🥹");
+    unlock();
 
   } else {
     alert("wrong password 😤");
@@ -54,5 +58,5 @@ window.addEventListener("load", () => {
   if (performance.navigation.type === 1) {
   sessionStorage.removeItem("unlocked");
   }
-  
+
 });
