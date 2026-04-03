@@ -45,3 +45,26 @@ window.addEventListener('scroll', showOnScroll);
 window.addEventListener('load', showOnScroll);
 
 updateFill();
+
+function openImage(img) {
+  const overlay = document.createElement("div");
+  overlay.style.position = "fixed";
+  overlay.style.inset = "0";
+  overlay.style.background = "rgba(0,0,0,0.9)";
+  overlay.style.display = "flex";
+  overlay.style.justifyContent = "center";
+  overlay.style.alignItems = "center";
+  overlay.style.zIndex = "999";
+
+  const fullImg = document.createElement("img");
+  fullImg.src = img.src;
+  fullImg.style.maxWidth = "90%";
+  fullImg.style.maxHeight = "90%";
+  fullImg.style.borderRadius = "12px";
+
+  overlay.appendChild(fullImg);
+
+  overlay.onclick = () => overlay.remove();
+
+  document.body.appendChild(overlay);
+}
