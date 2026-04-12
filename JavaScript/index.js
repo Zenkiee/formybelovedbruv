@@ -9,7 +9,8 @@ function checkPassword() {
   baguio: "you remembered 🥺",
   "030826": "our special date 💖",
   miguel: "wow, you really are my bruv 🥹",
-  geia: "Hi, cutie 😘"
+  geia: "Hi, cutie 😘",
+  migz: "Aww, you remembered my nickname 🥰"
 };
 
 if (responses[input]) {
