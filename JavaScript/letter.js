@@ -27,7 +27,7 @@ function typeWriter() {
   if (index < poemText.length) {
     poemElement.innerHTML += poemText.charAt(index) === '\n' ? '<br>' : poemText.charAt(index);
     index++;
-    setTimeout(typeWriter, 80);
+    setTimeout(typeWriter, 100);
   }
 }
 

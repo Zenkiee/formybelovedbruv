@@ -46,10 +46,9 @@ h3 {
 }
 
 .letter {
-  font-family: 'Dancing Script', cursive;
-  font-weight: 200;
-  letter-spacing: 1px;
-  font-size: 18px;
+  font-family: 'Inter', sans-serif;
+  font-style: italic;
+  font-size: 15px;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -132,7 +131,6 @@ h3 {
 
 .flex-layout {
   display: flex;
-  gap: 20px;
   align-items: center;
 }
 
