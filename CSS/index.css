@@ -42,19 +42,12 @@
   margin: auto;
 }
 
-.home-profile-title {
-  font-size: 11px;
-  opacity: 0.7;
-}
-
 .home-title {
   font-size: clamp(40px, 8vw, 80px);
   font-weight: 800;
-
   background: linear-gradient(90deg, #cfcfcf, #069de2);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-
   margin-bottom: 10px;
 }
 
