@@ -5,12 +5,7 @@ function checkPassword() {
   const main = document.getElementById("mainContent");
 
   const responses = {
-  bruv: "i love you so much, bruv 🥰",
-  baguio: "you remembered 🥺",
-  "030826": "our special date 💖",
-  miguel: "wow, you really are my bruv 🥹",
-  geia: "Hi, cutie 😘",
-  migz: "Aww, you remembered my nickname 🥰"
+  bruv: "i love you so much, bruv 🥰"
 };
 
 if (responses[input]) {
