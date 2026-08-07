@@ -1,0 +1,411 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Unforgettable Days</title>
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&family=Great+Vibes&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        scroll-behavior: smooth;
+      }
+
+      body {
+        font-family: Poppins, sans-serif;
+        background: linear-gradient(135deg, #ffe6eb, #fff5f7);
+        color: #444;
+        overflow-x: hidden;
+      }
+
+      /* Floating Hearts */
+
+      .heart {
+        position: fixed;
+        bottom: -20px;
+        color: #ff5c8d;
+        animation: float 8s linear infinite;
+        opacity: 0.4;
+        pointer-events: none;
+      }
+
+      @keyframes float {
+        from {
+          transform: translateY(0) scale(1);
+        }
+        to {
+          transform: translateY(-110vh) scale(2);
+          opacity: 0;
+        }
+      }
+
+      section {
+        padding: 90px 10%;
+      }
+
+      .hero {
+        min-height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+      }
+
+      .hero h1 {
+        font-family: "Great Vibes", cursive;
+        font-size: 80px;
+        color: #ff3d71;
+      }
+
+      .hero p {
+        margin-top: 20px;
+        font-size: 20px;
+      }
+
+      .btn {
+        display: inline-block;
+        margin-top: 40px;
+        background: #ff4d88;
+        color: white;
+        padding: 15px 35px;
+        border-radius: 50px;
+        text-decoration: none;
+        transition: 0.3s;
+      }
+
+      .btn:hover {
+        transform: scale(1.05);
+      }
+
+      h2 {
+        text-align: center;
+        color: #ff3d71;
+        margin-bottom: 50px;
+      }
+
+      /* Timeline */
+
+      .timeline {
+        max-width: 800px;
+        margin: auto;
+      }
+
+      .day {
+        background: white;
+        padding: 25px;
+        margin: 25px 0;
+        border-radius: 18px;
+        box-shadow: 0 15px 30px rgba(0, 0, 0, 0.08);
+        transition: 0.3s;
+      }
+
+      .day:hover {
+        transform: translateY(-5px);
+      }
+
+      /* Gallery */
+
+      .gallery {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 20px;
+      }
+
+      .gallery img {
+        width: 100%;
+        border-radius: 20px;
+        height: 260px;
+        object-fit: cover;
+        transition: 0.4s;
+      }
+
+      .gallery img:hover {
+        transform: scale(1.05);
+      }
+
+      /* Letter */
+
+      p {
+        margin-top: 15px;
+      }
+
+      .letter {
+        background: white;
+        max-width: 800px;
+        margin: auto;
+        padding: 40px;
+        border-radius: 20px;
+        box-shadow: 0 15px 30px rgba(0, 0, 0, 0.08);
+        line-height: 1.8;
+      }
+
+      footer {
+        text-align: center;
+        padding: 40px;
+        color: #888;
+      }
+
+      .music-player {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        max-width: 90vw;
+        padding: 10px 15px;
+        background: #ff3d71;
+        backdrop-filter: blur(10px);
+        border-radius: 30px;
+        overflow: hidden;
+      }
+
+      .vinyl {
+        width: 45px;
+        height: 45px;
+        border-radius: 50%;
+
+        background: radial-gradient(circle, #111 40%, #000 60%);
+        border: 2px solid rgba(255, 255, 255, 0.2);
+
+        position: relative;
+      }
+
+      .vinyl::after {
+        content: "";
+        width: 10px;
+        height: 10px;
+        background: #999;
+        border-radius: 50%;
+
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+
+      .vinyl.playing {
+        animation: spin 3s linear infinite;
+      }
+
+      @keyframes spin {
+        from {
+          transform: rotate(0deg);
+        }
+        to {
+          transform: rotate(360deg);
+        }
+      }
+
+      .music-title {
+        font-size: 14px;
+        color: white;
+        margin: 0;
+      }
+
+      @media (max-width: 700px) {
+        .hero h1 {
+          font-size: 55px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div id="hearts"></div>
+
+    <section class="hero">
+      <div>
+        <h1>The Unforgettable Days</h1>
+
+        <p>
+          Six days may seem short to the world, but they became some of the most
+          unforgettable moments of my life.
+        </p>
+
+        <a href="#timeline" class="btn">Relive Our Journey</a>
+      </div>
+    </section>
+
+    <section id="timeline">
+      <h2>📅 Our Journey</h2>
+
+      <div class="timeline">
+        <div class="day">
+          <h3>Day 1 🌸</h3>
+          <p>
+            How everything started. The excitement, nervous smiles, and our very
+            first memories together. I can still feel the first hug we've made.
+          </p><br>
+          <p>
+            This is when I felt the warmth of your presence and the beginning of something truly special. You handled me very differently from what I expected, and I felt so comfortable around you. I knew then that this was the start of something beautiful.
+          </p><br>
+          <p>
+            This is also the time we made our first kiss. Exchanged gifts. And shared our first laugh together. I will never forget how you made me feel on that day.
+          </p>
+        </div>
+
+        <div class="day">
+          <h3>Day 2 ☀️</h3>
+          <p>
+            We laughed a little more, talked a little longer, and got closer than before.
+          </p><br>
+          <p>
+            I remember how we spent the day exploring, watching movies, sharing stories, and creating memories that would last a lifetime. The way you looked at me made me feel like I was the only person in the world. It was a day filled with joy, laughter, and a sense of connection that I had never felt before.
+          </p>
+        </div>
+
+        <div class="day">
+          <h3>Day 3 💕</h3>
+          <p>
+            The day filled with unforgettable conversations and moments I'll always treasure.
+          </p><br>
+          <p>
+            This is when I realized how much I enjoyed your company and the way you made even ordinary moments feel extraordinary. We shared our dreams, our fears, and our hopes for the future. It was a day that deepened our bond and made me appreciate the unique connection we had.
+          </p>
+        </div>
+
+        <div class="day">
+          <h3>Day 4 🌙</h3>
+          <p>
+            The memories became even more special because every second felt
+            effortless with you.
+          </p><br>
+          <p>
+            Another day and evening we spent together, sharing stories and laughter under the stars. The night was filled with a sense of peace and contentment that I had never experienced before.
+          </p>
+        </div>
+
+        <div class="day">
+          <h3>Day 5 ✨</h3>
+          <p>
+            More adventures, more smiles, more reasons to never forget these
+            days.
+          </p><br>
+          <p>
+            This is when we realized how much we had grown together over the past few days. The connection we shared was undeniable, and I felt a sense of happiness and fulfillment that I had never known before.
+          </p>
+        </div>
+
+        <div class="day">
+          <h3>Day 6 ❤️</h3>
+          <p>
+            The last day was bittersweet, knowing that our time together was coming to an end. But the memories we created and the bond we formed would stay with me forever. I felt a deep sense of gratitude for having experienced such a beautiful journey with you.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>📸 Our Favorite Memories</h2>
+
+      <div class="gallery">
+        <img src="./assets/img/memory1.jpg" />
+        <img src="./assets/img/memory2.jpg" />
+        <img src="./assets/img/memory3.jpg" />
+        <img src="./assets/img/memory4.jpg" />
+        <img src="./assets/img/memory5.jpg" />
+        <img src="./assets/img/memory6.jpg" />
+        <img src="./assets/img/memory7.jpg" />
+        <img src="./assets/img/memory8.jpg" />
+        <img src="./assets/img/memory9.jpg" />
+        <img src="./assets/img/memory10.jpg" />
+        <img src="./assets/img/memory11.jpg" />
+        <img src="./assets/img/memory12.jpg" />
+      </div>
+    </section>
+
+    <section>
+      <h2>💌A short letter for all of this</h2>
+
+      <div class="letter">
+        <p>
+          Thank you for these six unforgettable days. I wish I could remember every single detail, 
+          but I know that the essence of each moment will stay with me forever. They weren't just six
+          ordinary days, they became memories I'll carry with me for a lifetime.
+          Every laugh, every conversation, every little adventure made those
+          moments incredibly special. Even if time keeps moving forward, I'll
+          always be grateful that our paths crossed. Some memories aren't
+          measured by how long they lasted, but by how deeply they touched our
+          hearts. ❤️
+        </p>
+      </div>
+    </section>
+
+    <footer>Made by your bruv, Miguel.</footer>
+
+    <div class="music-player">
+      <div class="vinyl" id="vinyl"></div>
+      <div class="music-info">
+        <p class="music-title">Play - Be With You</p>
+      </div>
+    </div>
+
+    <audio id="gallery-music" loop>
+      <source src="./assets/audio/Be With You.mp3" type="audio/mpeg" />
+    </audio>
+
+    <script>
+      const container = document.getElementById("hearts");
+
+      function createHeart() {
+        const heart = document.createElement("div");
+
+        heart.className = "heart";
+
+        heart.innerHTML = "❤";
+
+        heart.style.left = Math.random() * 100 + "vw";
+
+        heart.style.fontSize = 15 + Math.random() * 20 + "px";
+
+        heart.style.animationDuration = 5 + Math.random() * 6 + "s";
+
+        container.appendChild(heart);
+
+        setTimeout(() => heart.remove(), 11000);
+      }
+
+      setInterval(createHeart, 350);
+
+      function goBack() {
+        window.location.href = "index.html";
+      }
+
+      window.addEventListener("DOMContentLoaded", () => {
+        const music = document.getElementById("gallery-music");
+        const player = document.querySelector(".music-player");
+        const vinyl = document.getElementById("vinyl");
+
+        player.addEventListener("click", () => {
+          if (music.paused) {
+            music.volume = 0;
+            music.play();
+
+            let vol = 0;
+            const fade = setInterval(() => {
+              if (vol < 0.3) {
+                vol += 0.02;
+                music.volume = vol;
+              } else {
+                clearInterval(fade);
+              }
+            }, 200);
+
+            vinyl.classList.add("playing");
+          } else {
+            music.pause();
+            vinyl.classList.remove("playing");
+          }
+        });
+      });
+    </script>
+  </body>
+</html>

@@ -295,6 +295,37 @@ font-size: 1rem;
   transform: scale(1.02);
 }
 
+.reel-btn-container {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.reel-btn {
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 14px;
+  background: rgb(255, 255, 255);
+  backdrop-filter: blur(12px);
+  color: rgb(0, 0, 0);
+  text-align: center;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0.3px;
+  transition: all 0.25s ease;
+  box-shadow:
+    0 0 10px rgba(255, 255, 255, 0.05),
+    inset 0 0 10px rgba(255, 255, 255, 0.03);
+}
+
+.reel-btn:hover {
+  color: white;
+  transform: translateY(-2px);
+  background: rgb(0, 136, 255);
+  box-shadow:
+    0 0 25px rgba(255, 255, 255, 0.792),
+    0 0 50px rgba(64, 0, 255, 0.15);
+}
+
 @media (max-width: 768px) {
   .letter-grid {
     grid-template-columns: 1fr;
